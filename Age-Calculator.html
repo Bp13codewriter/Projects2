@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Age Calculator</title>
+	<style type="text/css">
+		body {background-color: coral;}
+	</style>
+</head>
+<body>
+<h1>How old are you?</h1>
+<br />
+<h3>Press this button</h3>
+<br />
+<p id="result">How old will you be when it's the year 2050</p>
+<button type="button" onclick="old()">Press</button>
+<script type="text/javascript">
+	var year = 2050;
+	var future = 1992;
+	var total = year-future; 
+
+function old() {
+	document.getElementById("result").innerHTML = " this will be your age. " + total; 
+
+}
+</script>
+</body>
+</html>
