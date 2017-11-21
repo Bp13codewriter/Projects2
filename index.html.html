@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Bryan's Profolio</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $(function () {
+            $(".accordion").accordion({
+                heightStyle: "fill",
+                collapsible: true,
+                active: false,
+                event: "mouseover"
+            }).on('mouseleave', function () {
+                $(this).accordion("option", "active", false);
+            });
+        });
+  </script>
+  <style type="text/css">
+    .accordion{
+      height: 200px;
+	  width:600px;
+    }
+  </style>	
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header><center><img src="logos/Bryan's-logo2.png" alt="" width="150"/>
+    
+    <a href="">    </a>
+	  </center>
+    <nav>
+      <ul>
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+	  <br>
+    <h2 class="hero_header">Bryan Peralta <font color="#">Porfilio</font></h2>
+	  <br>
+    <p class="tagline">2017</p>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    Hello! every one and welcome to my profolio! In this section of the web-site you'll see a gallery of works I have done in my Java-Script class ET-712 <br>
+    <br>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+	  <iframe id="over" name="iframe_a" style="border:2px solid grey;"></iframe>
+	  <h1 class="stats">My Fortune Teller</h1>
+	  <h4>Click on the Bottom</h4>
+		<p><a href="bryanperalta_assignment.html" target="iframe_a">Java-Script Assignment1</a></p>
+    </div>
+    <div class="thumbnail">
+	  <iframe id="till" name="iframe_a2" style="border:2px solid grey;"></iframe>
+		<h1 class="stats">The Age Calculator</h1>
+		<h4>Click on the Bottom</h4>
+		<p><a href="Age-Calculator.html" target="iframe_a2">Java-Script Assignment2</a></p>
+    </div>
+    <div class="thumbnail">
+		<iframe id="new" name="iframe_a3" style="border:2px solid grey;"></iframe>
+      <h1 class="stats">Working Calculator</h1>
+      <h4>Click on the Bottom</h4>
+      <p><a href="caculator/index.html" target="iframe_a3">Java-Script Assignment3</a></p>
+    </div>
+    <div class="thumbnail">
+		<iframe id="fle" name="iframe_a4" style="border:2px solid grey;"></iframe>
+      <h1 class="stats">Moving Objects</h1>
+      <h4>Click on the Bottom</h4>
+      <p><a href="Animation.html" target="iframe_a4">Java-Script Assignment4</a></p>
+    </div>
+  </div>
+  <!-- Parallax Section -->
+  <section class="banner">
+    <h2 class="parallax">Don't give up!</h2>
+    <p class="parallax_description">Keep going, future Graphic designers</p>
+  </section>
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+      <img src="images/Nyc.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Hi, My name is Bryan Peralta and I'm a future Web-designer. I Graduated from Bergen Community College with an Associates degree for Graphic Design in 2015 but as the years went by I notice that people weren't printing stuff anymore. A lot of people were using their phones and comptures to look at content so I had to adapt to my surrondings with technology and rise to the challenge of becoming an Awesome Web-Designer! </p>
+    </article>
+    <article class="footer_column">
+	<div class="accordion">
+  <h3>Section 1</h3>
+    <div>
+      <p>It's always a challenge to learning &nbsp;how to code but there is always a way </p>
+      <p><a href="https://www.codecademy.com/" target="_self">Code academy<br>
+      </a></p>
+    </div>
+  </div>
+
+  <div class="accordion">
+   <h3>Section 2</h3>
+    <div>
+      <p>This is just an exapmle of me using accordiens! </p>
+    </div>
+  </div>
+
+ <div class="accordion">
+   <h3>Section 3</h3>
+    <div>
+      <p>Another Link to get you guys started! </p>
+    </div>
+  </div>
+
+   <div class="accordion">
+   <h3>Section 4</h3>
+    <div>
+      <p>Hello</p>
+    </div>
+  </div> 	
+      
+    </article>
+  </footer>
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">subscribe</div>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2017 - <strong>By Bryan Peralta</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
